@@ -1,0 +1,50 @@
+{
+  "name": "wallaby-issue",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint .",
+    "prepublishOnly": "npm test && npm run lint && npm run build",
+    "report": "webpack",
+    "start": "webpack-dev-server",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage --silent --verbose"
+  },
+  "author": {
+    "email": "zarrellab@gmail.com",
+    "name": "Brandon Zarrella"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-regular-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.4.7",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-webpack-alias": "^2.1.2",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
+    "jest-dom": "^3.1.2",
+    "node-sass": "^4.11.0",
+    "react-testing-library": "^6.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  }
+}
