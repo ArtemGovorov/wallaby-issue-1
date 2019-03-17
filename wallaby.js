@@ -3,6 +3,10 @@ module.exports = wallaby => ({
     '__mocks__/**/*.js?(x)',
     'src/**/*.js?(x)',
     '!src/**/*.test.js?(x)',
+    'jest.setup.js',
+    'webpack.config.babel.js',
+    'webpack/**/*.js',
+    {pattern: '.babelrc', instrument: false},
   ],
   tests: ['src/**/*.test.js?(x)'],
   filesWithNoCoverageCalculated: [
