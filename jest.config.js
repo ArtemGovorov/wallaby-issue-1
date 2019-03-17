@@ -6,7 +6,7 @@ module.exports = {
     '\\.(s?css)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: [
-    '/Volumes/XT/brandonz/Coding/boilerplate/wallaby-issue/jest.setup.js', // Note the path equates to the same as below
+    '<rootDir>/jest.setup.js', // Note the path equates to the same as below
     // '<rootDir>/wallaby-issue/jest.setup.js',
     // FIXME: ^^^
     // Module ./wallaby-issue/jest.setup.js in the setupFilesAfterEnv option was not found.
